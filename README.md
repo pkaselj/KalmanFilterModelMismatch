@@ -38,11 +38,10 @@ $$ z_t = \begin{bmatrix}
 
 
 System is modeled as follows:
-$$
-x_t = F x_{t-1} + w_t \\
+
+$$ x_t = F x_{t-1} + w_t \\
 (z_t = F z_{t-1} + w_t) \\
-y_t = H x_{t} + v_t
-$$
+y_t = H x_{t} + v_t $$
 
 where $F$ is the state transition matrix, $H$ is observation matrix, $w_t$ is process noise (AWGN) with covariance matrix $Q$ and $w_t$ is measurement noise (AWGN) $v_t$ with variance $R$:
 
