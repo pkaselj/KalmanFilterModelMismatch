@@ -79,38 +79,35 @@ $$
     Q = \sigma_{Q}^2 \begin{bmatrix}
         \frac{\Delta{t}^3}{3} & \frac{\Delta{t}^2}{2} \\
         \frac{\Delta{t}^2}{2} & \Delta{t}
-    \end{bmatrix} \\
-    \sigma_{Q}^2 = 1.0
-$$
+    \end{bmatrix} $$
+
+$$ \sigma_{Q}^2 = 1.0 $$
 
 And finally, state covariance matrix $P$.
 
 ## Kalman filter
 
 ### Prediction step
-$$
-    z_{t}^{-} = F z_{t-1} \\
-    P_{t}^{-} = F P F^T + Q
-$$
+
+$$ z_{t}^{-} = F z_{t-1} $$
+
+$$ P_{t}^{-} = F P F^T + Q $$
 
 ### Innovation step
-$$
-    \widetilde{y_t} = y_t - H z_{t}^{-} \\
-    S_t = H P_{t}^{-} H^T + R \\
-    \\
-    \widetilde{y_{t}}_{norm} = \frac{\widetilde{y_t}}{\sqrt{S_t}}
-$$
+
+$$ \widetilde{y_t} = y_t - H z_{t}^{-} $$
+$$ S_t = H P_{t}^{-} H^T + R $$
+
+$$ \widetilde{y_{t}}_{norm} = \frac{\widetilde{y_t}}{\sqrt{S_t}} $$
 
 ### Kalman Gain Step
-$$
-    K_t = P_{t}^{-} H^T S^{-1}
-$$
+
+$$ K_t = P_{t}^{-} H^T S^{-1} $$
 
 ### Update Step
-$$
-    z_{t} = z_{t}^{-} + K_t \widetilde{y_t} \\
-    P_{t} = (I - K_t H) P_{t}^{-}
-$$
+
+$$ z_{t} = z_{t}^{-} + K_t \widetilde{y_t} $$
+$$ P_{t} = (I - K_t H) P_{t}^{-} $$
 
 
 ## Results
