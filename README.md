@@ -91,7 +91,7 @@ And finally, state covariance matrix $P$.
 
 $$ z_{t}^{-} = F z_{t-1} $$
 
-$$ P_{t}^{-} = F P F^T + Q $$
+$$ P_{t}^{-} = F P_{t-1} F^T + Q $$
 
 ### Innovation step
 
