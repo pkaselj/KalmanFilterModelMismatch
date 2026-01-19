@@ -82,7 +82,7 @@ if __name__ == '__main__':
     plt.plot(t, y[0, :], label = 'Measurement')
     plt.plot(t, z[0, :], label = 'Estimate')
     plt.xlabel("Time")
-    plt.xlabel("Distance")
+    plt.ylabel("Distance")
     plt.title(f"Filter results N={STEPS} dT={dT}")
     plt.legend(loc="upper left")
     plt.show()

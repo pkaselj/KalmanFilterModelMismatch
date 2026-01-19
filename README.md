@@ -27,6 +27,7 @@ $$ x_t = \begin{bmatrix}
 \end{bmatrix} $$
 
 Measurement:
+
 $$ y_t = p_t $$
 
 and state estimate:
@@ -67,7 +68,7 @@ $$
 Moreover, measurement noise covariance:
 
 $$
-    R = \sigma_{R}^{2} = 3
+    R = \sigma_{R}^{2} = 3.0
 $$
 
 Process noise covariance matrix is modeled as white acceleration noise:
@@ -76,7 +77,8 @@ $$
     Q = \sigma_{Q}^2 \begin{bmatrix}
         \frac{\Delta{t}^3}{3} & \frac{\Delta{t}^2}{2} \\
         \frac{\Delta{t}^2}{2} & \Delta{t}
-    \end{bmatrix}
+    \end{bmatrix} \\
+    \sigma_{Q}^2 = 1.0
 $$
 
 And finally, state covariance matrix $P$.
