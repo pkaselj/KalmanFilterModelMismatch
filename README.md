@@ -67,13 +67,13 @@ $$
 Moreover, measurement noise covariance:
 
 $$
-    R = 3
+    R = \sigma_{R}^{2} = 3
 $$
 
 Process noise covariance matrix is modeled as white acceleration noise:
 
 $$
-    Q = \sigma{Q} \begin{bmatrix}
+    Q = \sigma_{Q}^2 \begin{bmatrix}
         \frac{\Delta{t}^3}{3} & \frac{\Delta{t}^2}{2} \\
         \frac{\Delta{t}^2}{2} & \Delta{t}
     \end{bmatrix}
